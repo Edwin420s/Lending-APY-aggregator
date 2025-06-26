@@ -45,25 +45,3 @@ This project is a backend service for a Lending APY Aggregator platform. It coll
    ```bash
    git clone https://github.com/Edwin420s/lending-apy-aggregator.git
    cd lending-apy-aggregator
-
-
-lending-apy-aggregator/
-├── src/
-│   ├── app.js
-│   ├── routes/
-│   │   └── api.js
-│   ├── services/
-│   │   ├── alertService.js
-│   │   └── dataAggregator.js
-│   ├── jobs/
-│   │   └── dataFetchingJob.js
-│   └── ...
-├── prisma/
-│   └── schema.prisma
-├── .env
-├── docker-compose.yml
-├── package.json
-├── README.md
-└── ...
-
-mm
