@@ -63,3 +63,36 @@ lending-apy-aggregator/
 ├── docker-compose.yml # Docker config
 ├── package.json # Project dependencies
 └── README.md # Project documentation
+
+
+---
+
+## 🚀 How to Run the Project
+
+1. Clone the repository
+2. Install dependencies
+3. Set up `.env` file
+4. Run `docker compose up -d` for DB & Redis
+5. Run `npx prisma migrate dev --name init`
+6. Start the server with `nodemon src/app.js`
+
+---
+
+## ✅ API Endpoints
+
+- `GET /api/rates` — all lending rates
+- `GET /api/rates/:asset` — lending rates for a specific token (e.g. AVAX)
+
+---
+
+## 📡 WebSocket Alerts
+
+Connect to `ws://localhost:8081` and subscribe to live APY change alerts.
+
+---
+
+## 👨‍💻 Author
+
+**Edwin Mwiti**  
+GitHub: [@Edwin420s](https://github.com/Edwin420s)  
+Email: eduedwyn5@gmail.com
