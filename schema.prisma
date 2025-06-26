@@ -1,0 +1,38 @@
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String   @id @default(uuid())
+  email    String   @unique
+  password String
+  alerts   Alert[]
+  createdAt DateTime @default(now())
+}
+
+model LendingRate {
+  id        String   @id @default(uuid())
+  platform  String
+  asset     String
+  apy       Float
+  liquidity Float
+  timestamp DateTime
+}
+
+model Alert {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  asset     String
+  platform  String?  // Optional - if null, applies to all platforms
+  threshold Float
+  condition String   // 'ABOVE' or 'BELOW'
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
