@@ -48,8 +48,11 @@ This project is a backend service for a Lending APY Aggregator platform. It coll
 
 ## 📁 Project Structure
 lending-apy-aggregator/
+
 ├── src/
+
 │ ├── app.js # Main server
+
 │ ├── routes/api.js # API endpoints
 │ ├── services/
 │ │ ├── alertService.js # WebSocket alerts
