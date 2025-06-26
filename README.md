@@ -54,14 +54,23 @@ lending-apy-aggregator/
 │ ├── app.js # Main server
 
 │ ├── routes/api.js # API endpoints
+
 │ ├── services/
+
 │ │ ├── alertService.js # WebSocket alerts
+
 │ │ └── dataAggregator.js # Blockchain data fetch
+
 │ └── jobs/dataFetchingJob.js
+
 ├── prisma/schema.prisma # Prisma DB schema
+
 ├── .env # Environment variables
+
 ├── docker-compose.yml # Docker config
+
 ├── package.json # Project dependencies
+
 └── README.md # Project documentation
 
 
