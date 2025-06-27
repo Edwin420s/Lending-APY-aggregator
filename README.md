@@ -7,11 +7,6 @@ This project is a backend service for a Lending APY Aggregator platform. It coll
 
 ---
 
-## Author
-**Edwin420s**
-
----
-
 ## Features
 - Fetch lending APY data from blockchain platforms
 - Store data in PostgreSQL database using Prisma ORM
@@ -47,9 +42,10 @@ This project is a backend service for a Lending APY Aggregator platform. It coll
 git clone https://github.com/Edwin420s/lending-apy-aggregator.git
 cd lending-apy-aggregator
 npm install
-``
-Project Structure:
+```
 
+Project Structure:
+```
 lending-apy-aggregator/
 ├── src/
 │   ├── app.js                # Main server file
@@ -67,7 +63,8 @@ lending-apy-aggregator/
 ├── package.json              # Project dependencies and scripts
 └── README.md                 # Project documentation
 
-.env
+```
+Create a .env file with these variables (replace yourpassword accordingly):
 
 DATABASE_URL="postgresql://postgres:yourpassword@localhost:5432/lending_apy?schema=public"
 AVALANCHE_RPC_URL="https://api.avax.network/ext/bc/C/rpc"
